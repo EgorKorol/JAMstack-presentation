@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shower Presentation Engine</title>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1">
+    <link rel="stylesheet"
+          href="shower/themes/ribbon/styles/styles.css">
+    <style>
+        .shower {
+            --slide-ratio: calc(16 / 9);
+        }
+
+    </style>
+</head>
+
+<body class="shower list">
+
+    <header class="caption">
+        <h1>JAMstack for websites</h1>
+        <p>Headless CMS, static generate and etc.</p>
+    </header>
+
+    <section class="slide"
+             id="cover">
+        <h2>JAMstack for Smartym web services</h2>
+        <p>Created by <a href="https://github.com/EgorKorol"
+               target="_blank">Egor Korol</a></p>
+        <figure>
+            <img class="cover"
+                 src="pictures/cover.jpg"
+                 alt="Hands on the orange typewriter in a park">
+            <figcaption class="copyright right white">
+                <a href="http://fiftyfootshadows.net/">© John Carey</a>
+            </figcaption>
+        </figure>
+        <style>
+            #cover h2 {
+                margin: 30px 0 270px;
+                color: white;
+                text-align: center;
+                font-size: 70px;
+            }
+
+            #cover p {
+                margin: 10px 0 0;
+                text-align: center;
+                color: white;
+                font-style: italic;
+                font-size: 20px;
+            }
+
+            #cover p a {
+                color: white;
+            }
+
+        </style>
+    </section>
+
+    <section class="slide">
+        <h2>What is goal?</h2>
+        <p><b>Main goal:</b> move Smartym web services to JAMstack. Why?</p>
+        <ol>
+            <li>Leave WP for content editing</li>
+            <li>It's easy deploy and edit</li>
+            <li>High performance</li>
+            <li>Cheap introduction</li>
+            <li>No backend</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Why the JAMstack?</h2>
+        <ol>
+            <li>Better Performance</li>
+            <li>Cheaper, Easier Scaling</li>
+            <li>Higher Security</li>
+            <li>Better Developer Experience</li>
+            <li>SEO and this is all</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>Best Practices JAMstack apps</h2>
+        <ol>
+            <li>Entire Project on a CDN</li>
+            <li>Automated Builds</li>
+            <li>Everything Lives in Git</li>
+            <li>Atomic Deploys</li>
+            <li>Modern Build Tools</li>
+            <li>Instant Cache Invalidation</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>How to do it?</h2>
+        <p>SSR frameworks + Headless CMS = JAMstack</p>
+    </section>
+
+    <section class="slide">
+        <h2>What SSR framework we should use?</h2>
+        <p>Our choose - <a href="https://nuxtjs.org/"
+               target="_blank">Nuxt.js</a></p>
+        <ul>
+            <li>It easy to learn</li>
+            <li>It use native html/js/css</li>
+            <li>It has many plugins and libraries.</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>What headless CMS we should use?</h2>
+        <p>Our choose - <a href="https://strapi.io/overview"
+               target="_blank">Strapi</a></p>
+        <ul>
+            <li>Open source</li>
+            <li>Self-hosted</li>
+            <li>Customizable</li>
+            <li>RESTful or GraphQL</li>
+            <li>100% JavaScript</li>
+            <li>Extensible by design</li>
+        </ul>
+    </section>
+
+    <section class="slide">
+        <h2>Ideas:</h2>
+        <ol>
+            <li>Deploy a Strapi on a company server</li>
+            <li class="next">Distribute roles in admin panel</li>
+            <li class="next">Transfer Landing to Nuxt.js (using components)</li>
+            <li class="next">Mock all text using api from Strapi</li>
+            <li class="next">Set up WebHooks to run CI</li>
+            <li class="next">Generate static pages at build time</li>
+        </ol>
+    </section>
+
+    <section class="slide">
+        <h2>What's profit?</h2>
+        <ol>
+            <li>Managers can change text without engaging developers</li>
+            <li>We have free admin panel</li>
+            <li>We can create anything api</li>
+            <li>Our websites on CDN</li>
+            <li>All it free and easy for think</li>
+        </ol>
+    </section>
+
+    <section class="slide"
+             id="see-more">
+        <h2>Thank you</h2>
+        <p>I expect your opinion</p>
+        <style>
+            #see-more {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #see-more h2 {
+                font-size: 50px
+            }
+
+        </style>
+    </section>
+
+    <footer class="badge">
+        <a href="https://github.com/shower/shower">Fork me on GitHub</a>
+    </footer>
+
+    <div class="progress"></div>
+
+    <script src="shower/shower.min.js"></script>
+    <!-- Copyright © 3000 Yours Truly, Famous Inc. -->
+
+</body>
+
+</html>
